@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<link rel="stylesheet" href="./assets/css/reset.css" />
+	<link rel="stylesheet" href="https://unpkg.com/beerslider/dist/BeerSlider.css">
+	<link rel="stylesheet" href="./assets/css/style.css" />
+	<title>XR mirror-tryOn</title>
+	<link rel="shortcut icon" href="./thumbs/deepar.ico">
+</head>
+<body>
+	<div class="wrap">
+    	<div id="loader-js" class="loader">
+      		<div class="loader_text">
+				<span>L</span>
+				<span>O</span>
+				<span>A</span>
+				<span>D</span>
+				<span>I</span>
+				<span>N</span>
+				<span>G</span>
+			</div>
+			<div class="loader_box">
+				<div class="loader_inner"></div>
+				<div class="loader_inner"></div>
+				<div class="loader_inner"></div>
+				<div class="loader_inner"></div>
+				<div class="loader_inner"></div>
+				<div class="loader_inner"></div>
+				<div class="loader_inner"></div>
+				<div class="loader_inner"></div>
+				<div class="loader_inner"></div>
+				<div class="loader_inner"></div>
+				<div class="loader_inner"></div>
+				<div class="loader_inner"></div>
+			</div>
+		</div>
+		<div id="alertModal">
+			<div>
+				<p>商品を選択してください</p>
+				<a href="javascript:history.back();">戻る</a>
+			</div>
+		</div>
+		<div id="cartModal">
+			<div>
+				<p>カートに追加しました</p>
+				<a id="cartClose" href="/brand/000000/confirm.html">カート画面へ</a>
+			</div>
+		</div>
+		<div class="main">
+			<div class="btns_top">
+				<a href="javascript:history.back();" id="returnBtn" ><font class="pc" size="6">&lt;</font><font class="sp" size="3">&lt;</font>&ensp;戻る</a>
+				<button id="switch-btn" class="sp"><img src="./assets/images/icon-camera_switch.png" alt="カメラ切り替え"></button>
+			</div>
+
+			<div id="cvsWrap">
+				<canvas class="deepar" id="deepar-canvas" oncontextmenu="event.preventDefault()"></canvas>
+				<img src="./assets/images/logo.png" alt="logo">
+			</div>
+
+			<div class="acc">
+				<div class="btns">
+					<button id="btn-shot"><img src="./assets/images/icon-camera.png" alt="camera"></button>
+					<button id="btn-cap"><img src="./assets/images/icon-beforeAfter.png" alt="before/after"></button>
+				</div>
+				<div class="acc-tab">
+					<img class="acc-icon" id="post-btn" src="./assets/images/icon-panelArrow.png" alt="arrow">
+				</div>
+
+				<div class="acc-content">
+					<div class="acc-inner">
+						<div class="acc-carousel">
+							<div id="carousel-data" class='carousel'></div>
+							<div id="products_spec">
+								<p id="product_name"></p>
+								<p id="product_price"></p>
+								<p id="product_category"></p>
+							</div>
+						</div>
+						<div id="acc-btnsWrap">
+							<div class="acc-btns">
+								<button id="reset-btn"><img src="./assets/images/icon-reset.png" alt="リセットボタン"></button>
+								<div id="colorBtn-01" class="circle"></div>
+								<div id="colorBtn-02" class="circle"></div>
+								<div id="colorBtn-03" class="circle"></div>
+								<div id="colorBtn-04" class="circle"></div>
+								<div id="colorBtn-05" class="circle"></div>
+								<div id="colorBtn-06" class="circle"></div>
+								<div id="lipgloss-wrap">
+									<div id="lipgloss-btn01" class="gloss">ON</div>
+									<div id="lipgloss-btn02" class="gloss">OF</div>
+								</div>
+							</div>
+							<div id="cart-btn" class="acc-btm"><input type="submit" value="カートに追加"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- before / after -->
+			<div class="modal">
+				<div class="modal-overlay"></div>
+				<div class="modal-container">
+					<div class="modal-top">
+						<button id="close-btn">&times;</button>
+						<p id="modal-text">矢印をスライドさせてください</p>
+					</div>
+					<div class="modal-box">
+						<div id="modal-picture" class="modal-picture" >
+							<img id="modal-phot" src="" alt="撮影した写真">
+						</div>
+						<div id="beer-area" style="display: none;">
+						<div id="beer-slider" class="beer-slider" data-beer-label="before">
+							<img id="beforeImg" src="https://placehold.jp/413x330.png" alt="before">
+							<div class="beer-reveal" data-beer-label="after">
+								<img id="afterImg" src="https://placehold.jp/413x330.png" alt="after">
+							</div>
+						</div>
+						</div>
+					</div>
+					<div id="modal-footer" class="modal-footer">
+						<div>
+							<button id="save-btn1">pngで保存する</button>
+							<button id="save-btn2">jpgで保存する</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  	</div>
+	<script type="text/javascript" src="lib/deepar.js"></script>
+	<script src="https://unpkg.com/beerslider/dist/BeerSlider.js"></script>
+	<script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+	<script type="text/javascript" src="./assets/js/script.js"></script>
+</body>
+</html>

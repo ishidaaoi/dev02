@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" />
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>xrmirror10</title>
+  <link rel="shortcut icon" href="./thumbs/deepar.ico">
+</head>
+
+<body>
+  <div class="l-wrap">
+    <!-- ローディング -->
+      <div id="loader-wrapper">
+          <div class="loader__box">
+            <div class="loader"></div>
+            <div class="loader"></div>
+            <div class="loader"></div>
+            <div class="loader"></div>
+            <div class="loader"></div>
+            <div class="loader"></div>
+            <div class="loader"></div>
+            <div class="loader"></div>
+            <div class="loader"></div>
+            <div class="loader"></div>
+            <div class="loader"></div>
+            <div class="loader"></div>
+          </div>
+        </div>
+  </div>
+
+  <div class="layer">
+    <!-- ヘッダー -->
+    <header class="l-header">
+      <div class="l-header__container">
+        <div class="l-header__logo">
+          <img src="./thumbs/header-logo.png" alt="#">
+        </div>
+      </div>
+    </header>
+
+    <div class="l-frame__wrap">
+      <div class="l-frame__conrainer">
+
+        <div class="p-navi">
+          <ul class="p-navi__list">
+            <li class="p-navi__item p-navi__item--01">
+              <p class="p-navi__text">お買い物かご</p>
+            </li>
+            <li class="p-navi__item p-navi__item--img">
+              <img src="./thumbs/35.png" alt="">
+            </li>
+            <li class="p-navi__item">
+              <p class="p-navi__text">注文確認</p>
+            </li>
+              <li class="p-navi__item p-navi__item--img">
+              <img src="./thumbs/35.png" alt="">
+            </li>
+            <li class="p-navi__item">
+              <p class="p-navi__text">注文完了</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="p-cartArea">
+          <div class="p-inside">
+            <div class="p-inside__wrap">
+              <div class="p-inside__container">
+                <ul id="js-cartTemplate" class="p-inside__list">
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="p-total">
+            <div class="p-total__wrap">
+              <div id="js-next" class="p-total__text">ご注文手続きへ</div>
+              <div class="p-total__subtotal">
+                <div class="p-total__subtotalText">
+                  ご注文小計(税込):
+                  <div class="p-total__add">
+                    <span id="js-total" class="p-total__addText"></span>円
+                  </div>
+                </div>
+              </div>
+              <a id="js-return" class="p-total__return" href="javascript:history.back();">
+              お買い物を続ける
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- フッター -->
+    <footer class="l-footer">
+      <div class="l-footer__container">
+        <div class="l-footer__offer">
+          <img src="./thumbs/footer.png" alt="#">
+        </div>
+        <p class="l-footer__copy">
+          <small>COPYRIGHT © KDDI CORPORATION, ALL RIGHTS RESERVED</small>
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="./assets/js/confirm.js"></script>
+</body>
+
+</html>

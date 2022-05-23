@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" />
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>xrmirror10</title>
+  <link rel="shortcut icon" href="./thumbs/deepar.ico">
+</head>
+
+<body>
+  <div class="l-wrap">
+    <!-- ローディング -->
+    <div id="loader-wrapper">
+      <div class="loader__box">
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+      </div>
+  </div>
+
+    <!-- ヘッダー -->
+    <header class="l-header">
+      <div class="l-header__container">
+        <div class="l-header__logo">
+          <img src="./thumbs/header-logo.png" alt="#">
+        </div>
+        <div class="l-header__icon">
+          <div class="l-header__arCount">
+            <span id="js-ar-cnt" class="l-header__arText"></span>
+          </div>
+          <div id="header--deepar" class="l-header__deepar js-push">
+            <img id="header--deeparPicture" src="./thumbs/ar-icon01.png" alt="#">
+          </div>
+          <div class="l-header__cartCount">
+            <span id="js-cart-cnt" class="l-header__cartText"></span>
+          </div>
+          <div id="header--cart" class="l-header__cart js-cart-push">
+            <img id="header--cartPicture" src="./thumbs/cart-icon01.png" alt="#">
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="l-main">
+
+      <!-- トップヒーロー -->
+      <div class="p-topHero fadeLeft">
+        <div class="p-topHero__wrap">
+          <div class="swiper js-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="p-topHero__item">
+                  <div class="p-topHero__box">
+                    <div class="p-topHero__inner">
+                      <div class="p-topHero__brandLogo">
+                        <img src="./thumbs/brandlogo.png" alt="#">
+                      </div>
+                      <div class="p-topHero__text">
+                        MAKE-UP WITH <br class="p-topHero__textBr"> YOUR HEART TO
+                      </div>
+                    </div>
+                    <div class="p-topHero__picture">
+                      <img src="./thumbs/topHero-picture02.jpg" alt="#">
+                    </div>
+                  </div>
+                  <div class="p-topHero__itemPicture">
+                    <img src="./thumbs/topHero-item01.png" alt="#">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <ul class="p-topHero__list">
+                  <div class="p-topHero__item">
+                    <div class="p-topHero__box">
+                      <div class="p-topHero__inner">
+                        <div class="p-topHero__brandLogo">
+                          <img src="./thumbs/brandlogo.png" alt="#">
+                        </div>
+                        <div class="p-topHero__text">
+                          MAKE-UP WITH <br class="p-topHero__textBr"> YOUR HEART TO
+                        </div>
+                      </div>
+                      <div class="p-topHero__picture">
+                        <img src="./thumbs/111111.jpg" alt="#">
+                      </div>
+                    </div>
+                    <div class="p-topHero__itemPicture p-topHero__itemPicture--02">
+                      <img src="./thumbs/topHero-item02.png" alt="#">
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- コンセプト -->
+      <div class="p-concept fadeLeft">
+        <div class="p-concept__container">
+          <ul class="p-concept__content">
+            <li class="p-concept__item">
+              <div class="p-concept__picture p-concept__picture--01 fadein">
+                <img src="./thumbs/concept05.jpg" alt="#">
+              </div>
+              <p class="p-concept__text fadein">
+                素顔の息抜きが感じられる美しさ。肌を包み込むような心地よさをもつメイクアップシリーズ。つけていることが、そのままスキンケアにつながります。メイクアップをするとき、その感触に心地よさを感じ、仕上がりの美しさに充実感と高揚感を覚えます。
+              </p>
+            </li>
+            <li class="p-concept__item p-concept__item--02">
+              <div class="p-concept__text p-concept__text--02 fadein">
+                もっともっと、次の私の美しさを見つけたい。胸ときめきたい。
+                JILLSTUARTは女性のカラダの中からの美しさを引き出すために誕生したブランドです。
+              </div>
+              <p class="p-concept__picture p-concept__picture--02 fadein">
+                <img src="./thumbs/concept06.jpg" alt="#">
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- プロダクト -->
+      <div id="product-wrap" class="p-product">
+        <div class="p-product__container">
+          <h2 class="p-product__title fadein">Products</h2>
+          <ul id="js-product" class="p-product__list">
+          </ul>
+        </div>
+      </div>
+
+      <!-- モーダル -->
+      <div class="p-modal">
+        <div class="p-modal__overlay"></div>
+        <div class="p-modal__container">
+          <div class="p-modal__box">
+            <p class="p-modal__text">AR TRY ONのリストに追加しました &excl;</p>
+          </div>
+          <button id="showCart-btn" class="p-modal__cart">カート画面へ</button>
+          <div class="p-modal__inner">
+            <button id="modal-btn" class="p-modal__button">OK</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ポップアップ -->
+      <div class="p-popUp">
+        <div id="js-popUp" class="p-popUp__container">
+          <div class="p-popUp__box">
+            <div class="star-fav"></div>
+            <p class="p-popUp__text">AR TRY ONのリストに追加しました &excl;</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- プロダクト詳細モーダル -->
+      <div class="p-productModal">
+        <div class="p-productModal__overlay"></div>
+        <div class="p-productModal__container">
+          <button id="close-btn" class="p-productModal__close">
+            <img src="./thumbs/x.png" alt="#">
+          </button>
+          <ul id="js-productModal" class="p-productModal__box"></ul>
+        </div>
+      </div>
+
+      <!-- AR選択モーダル -->
+      <div class="p-arModal">
+        <div class="p-arModal__overlay"></div>
+        <div class="p-arModal__container">
+            <button id="close-btn02" class="p-arModal__close">
+              <img src="./thumbs/x.png" alt="#">
+            </button>
+            <p class="p-arModal__text">選択商品一覧</p>
+            <ul id="js-arModal" class="p-arModal__box"></ul>
+          <div class="p-arModal__buttonArea">
+            <button id="arModal-btn" class="p-arModal__button">AR画面へ</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- AR帯 -->
+      <div id="js-banner" class="p-banner js-push">
+        <div class="p-banner__wrap">
+          <div class="p-banner__container">
+            <div class="p-banner__icon">
+              <img src="./thumbs/ar-icon01.png" alt="#">
+            </div>
+            <p class="p-banner__text">AR TRY ON を行う</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- フッター -->
+    <footer class="l-footer">
+      <div class="l-footer__container">
+        <div class="l-footer__offer">
+          <img src="./thumbs/footer.png" alt="#">
+        </div>
+        <p class="l-footer__copy">
+          <small>COPYRIGHT © K0000123 CORPORATION, ALL RIGHTS RESERVED</small>
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+  <script type="text/javascript" src="./assets/js/index.js"></script>
+</body>
+
+</html>
