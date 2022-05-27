@@ -597,7 +597,7 @@ PRODUCT_OVERLAY.onclick = function () {
           removeBtnSign()
           .then(() => {
             console.log("AR画面へ移動");
-            location.href = '/makeup_ar/000000/';
+            location.href = '000001';
             MODAL_TEXT.innerText = "AR TRY ONのリストに追加しました！";
           })
         .catch((error) => {
