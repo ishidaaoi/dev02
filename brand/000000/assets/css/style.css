@@ -184,7 +184,7 @@ button,input {
 .l-header__cartCount {
   position: relative;
   top: -13px;
-  left: 14px;
+  left: 32px;
   width: 12px;
   height: 12px;
   line-height: 1.2;
@@ -1033,9 +1033,12 @@ font-size: 30px;
   }
   .p-topHero__itemPicture {
     max-width: 120px;
-    width: 28%;
+    width: 16%;
+    top: 54%;
+    right: 3%;
+    /* width: 28%;
     top: 34%;
-    right: 0%;
+    right: 0%; */
   }
   .p-topHero__text {
     font-size: 22px;
@@ -1565,14 +1568,20 @@ font-size: 30px;
     top: 60px;
   }
   .p-topHero__itemPicture {
-    width: 240px;
+    width: 120px;
     top: 41%;
-    left: 23%;
+    left: 30%;
+    /* width: 240px;
+    top: 41%;
+    left: 23%; */
   }
   .p-topHero__itemPicture--02 {
-    width: 220px;
+    width: 160px;
+    top: 50%;
+    left: 28%;
+    /* width: 220px;
     top: 27%;
-    left: 24%;
+    left: 24%; */
   }
   .p-topHero__text {
     margin-top: 100px;

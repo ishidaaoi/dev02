@@ -408,9 +408,9 @@ function settingMake() {
 						deepAR.changeParameterVector(settings[i]['gameObject'][k], 'MeshRenderer', settings[i]['parameter'], isR6/255, isG6/255 , isB6/255, settings[i]['a']);
 					}
 				}
-      		}
-    	}
-  	}
+				}
+		}
+	}
 }
 
 // ===========================================================

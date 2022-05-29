@@ -50,7 +50,7 @@ var data = {
     { id: "1", name: "Eyebrow Brush", price: "2200", category: "1", date: "2020/12/1", colors: "1色", details: "厚みのあるフラットな筆で、ふんわり眉が描きやすい。テクニックレスで理想の眉を叶える、優しい肌あたりのアイブロウブラシ。", url: "./thumbs/rip.jpg", r1: "135", g1: "98", b1: "72", r2: "135", g2: "98", b2: "72", r3: "135", g3: "98", b3: "72", r4: "135", g4: "98", b4: "72", r5: "135", g5: "98", b5: "72", r6: "135", g6: "98", b6: "72" },
     { id: "1", name: "Sakura Bouquet Rouge Lip Jewel Gemmy Satin", price: "2420", category: "6", date: "2022/3/1", colors: "1色", details: "ジュエリーのような美発色と上質なサテンのツヤ。桜のようにやわらかな光を宿す限定色リップ&ケース。", url: "./thumbs/eyeshadow.jpg", r1: "135", g1: "98", b1: "72", r2: "135", g2: "98", b2: "72", r3: "135", g3: "98", b3: "72", r4: "135", g4: "98", b4: "72", r5: "135", g5: "98", b5: "72", r6: "135", g6: "98", b6: "72" },
     { id: "1", name: "Glossy Brow Mascara", price: "2420", category: "4", date: "2020/12/1", colors: "1色", details: "繊細なピンクパールで、ツヤやかなフェミニン眉へ。毛流れをととのえて立体感をつくるクリアブロウマスカラ。", url: "./thumbs/brow.png", r1: "135", g1: "98", b1: "72", r2: "135", g2: "98", b2: "72", r3: "135", g3: "98", b3: "72", r4: "135", g4: "98", b4: "72", r5: "135", g5: "98", b5: "72", r6: "135", g6: "98", b6: "72" },
-    { id: "1", name: "items_1.jpg", price: "4620", category: "5", date: "2022/2/7", colors: "2色", details: "頬の血色感も立体感もコンパクト1つ。春の陽射しの下、可憐に頬を彩る新色チークカラー。", url: "./thumbs/rip02.jpg", r1: "135", g1: "98", b1: "72", r2: "135", g2: "98", b2: "72", r3: "135", g3: "98", b3: "72", r4: "135", g4: "98", b4: "72", r5: "135", g5: "98", b5: "72", r6: "135", g6: "98", b6: "72" },
+    { id: "1", name: "Bloom Mix Blush Compact", price: "4620", category: "5", date: "2022/2/7", colors: "2色", details: "頬の血色感も立体感もコンパクト1つ。春の陽射しの下、可憐に頬を彩る新色チークカラー。", url: "./thumbs/rip02.jpg", r1: "135", g1: "98", b1: "72", r2: "135", g2: "98", b2: "72", r3: "135", g3: "98", b3: "72", r4: "135", g4: "98", b4: "72", r5: "135", g5: "98", b5: "72", r6: "135", g6: "98", b6: "72" },
   ]
 };
 
@@ -228,7 +228,6 @@ PRODUCT_OVERLAY.onclick = function () {
 // ===========================================================
 
 //////////getAPI組み込み///////////
-// function showProduct(data) {
   //=====productの表示=====//
   let productTemplate = "";
   for (let i = 0; i < data.menu.length; i++) {
@@ -552,7 +551,6 @@ PRODUCT_OVERLAY.onclick = function () {
           AR_OVERLAY.classList.add("active");
           SHOW_CART_BTN.classList.remove("active");
         } else {
-          // dataReset();
           //=====ARモーダルに組み込み=====//
           let modalAr = "";
           for (let i = 0; i < tryItems.length; i++) {
