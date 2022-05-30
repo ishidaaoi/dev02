@@ -128,10 +128,9 @@ const keyValue = true;
 if (!localStorage.getItem(keyName)) {
     //localStorageにキーと値を追加
   localStorage.setItem(keyName, keyValue);
-  // getAPI();
-    let loaderWrapper = document.getElementById("loader-wrapper");
+  //ここに初回アクセス時の処理
+  let loaderWrapper = document.getElementById("loader-wrapper");
   loaderWrapper.classList.add("loaded");
-    //ここに初回アクセス時の処理
     console.log("初めての訪問です");
       localStorage.clear();
       window.onload = function () {
@@ -149,10 +148,9 @@ if (!localStorage.getItem(keyName)) {
 } else {
     //ここに通常アクセス時の処理
   console.log("訪問済みです");
-  // getAPI();
+  window.onload = function () {
       let loaderWrapper = document.getElementById("loader-wrapper");
-  loaderWrapper.classList.add("loaded");
-    window.onload = function () {
+      loaderWrapper.classList.add("loaded");
       fadeInEvent();
       window.addEventListener("scroll", fadeInEvent, false);
       setTimeout(() => {
